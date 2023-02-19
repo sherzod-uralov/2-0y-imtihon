@@ -1,0 +1,151 @@
+.nav{
+    display:flex;
+    align-items: center;
+    column-gap: 58px;
+}
+nav{
+   height: 90px;
+   padding-top: 20px;
+}
+.nav__button{
+    padding: 14px 39px;
+    background-color: $main-clor;
+    border: none;
+    @include font-1();
+    color: white;
+    border: 1px solid #FCB72B;
+    transition: 0.5s;
+    font-size: 15px;
+    line-height: 25px;
+}
+.nav__button:hover{
+    background-color:transparent;
+    border: 1px solid #FCB72B;
+    transition: 0.5s;
+    color: #FCB72B;
+}
+.nav{
+    ul{
+    display: flex;
+    column-gap: 32px;
+    align-items: center;
+    }
+    .link{
+        color: $dim-greey;
+        font-size: 15px;
+        font-family: 'Space Mono';
+        transition: 0.5s;
+        font-style: normal;
+        font-weight: 700;
+    }
+    .link:hover{
+        color: #FCB72B;
+        transition: 0.5s;
+    }
+}
+nav{
+    position: fixed;
+    width: 100%;
+    background-color: rgba(214, 214, 214, 0.6);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    z-index: 80;
+    top: 0;
+}
+.opasity{
+    opacity: 0;
+    transition: 0;
+}
+.hero{
+    margin-top: 90px;
+}
+.nav__ul-button{
+    display: flex;
+    align-items: center;
+    z-index: 3;
+    width: 100%;
+    justify-content: space-between;
+}
+.hamburger__bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: $main-clor;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+}
+.hamburger{
+    display: none;
+}
+.nav__ul-button ul li:hover{
+    color: #FCB72B;
+    transition: 0.6s linear;
+  }
+  .wrapper{
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+  }
+  .wrapper .static-txt{
+    color: #000000;
+    font-size: 60px;
+    font-weight: 400;
+  }
+  .wrapper .dynamic-txt{
+    margin-left: 15px;
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+  }
+  .dynamic-txt li{
+    list-style: none;
+    font-size: 60px;
+    font-weight: 500;
+    position: relative;
+    top: 0;
+    animation: slide 12s steps(4) infinite;
+  }
+  @keyframes slide {
+    100%{
+      top: -360px;
+    }
+  }
+  .dynamic-txt li span{
+    position: relative;
+    margin: 5px 0;
+    line-height: 90px;
+  }
+  .dynamic-txt li span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #ffffff;
+    border-left: 2px solid #000000;
+    animation: typing 3s steps(10) infinite;
+  }
+  @keyframes typing {
+    40%, 60%{
+      left: calc(100% + 30px);
+    }
+    100%{
+      left: 0;
+    }
+  }
+  .rote{
+    display: flex;
+    justify-content: center;
+  }
+ .html{
+    color: #EE7B23;
+ }
+ .css{
+    color: #0B67CA;
+ }
+ .scss{
+    color: #ECAFC3;
+ }
+ .js{
+    color: #EADF40;
+ }

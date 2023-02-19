@@ -1,0 +1,58 @@
+.little-box{
+    display: flex;
+    align-items: center;
+    background-color: hsl(214, 37%, 96%);
+    max-width: 1110px;
+    margin-top: 32px;
+    transition: linear 0.8s;
+    justify-content: space-between;
+    padding: 35px 40px;
+}
+.little-box:hover{
+    transition: 0.8s;
+    transform: translateX(10px);
+}
+.careers__box{
+    margin-top: 100px;
+}
+.little-box h3{
+    font-family: 'Space Mono';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 28px;
+/* identical to box height, or 117% */
+
+letter-spacing: -1.07143px;
+
+color: #495567;
+}
+.little-box p{
+    padding-top: 8px;
+    font-family: 'Lexend Deca';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 25px;
+/* identical to box height, or 167% */
+
+
+color: #495567;
+}
+.little-box button{
+    padding: 12px 45px;
+    background-color: #FCB72B;
+    border: 1px solid transparent;
+    color: white;
+    transition: 0.7s;
+
+}
+.little-box button:hover{
+    border: 1px solid #FCB72B;
+    background-color: white;
+    color: #FCB72B;
+    transition: 0.7s;
+}
+.cardes{
+    margin-top: 70px;
+}

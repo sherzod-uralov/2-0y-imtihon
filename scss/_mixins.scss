@@ -1,0 +1,12 @@
+@mixin center(){
+    display: flex;
+    justify-content: center;
+}
+@mixin space-beetwen(){
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+@mixin font-1(){
+    font-family:'Space Mono';
+}

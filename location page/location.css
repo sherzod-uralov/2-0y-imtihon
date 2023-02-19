@@ -1,0 +1,96 @@
+.location{
+    background-image: url(../about_images/Bitmap.png);
+    max-width: 100%;
+    padding: 70px;
+    background-repeat: no-repeat;
+    height: 200px;
+    margin-top: 90px;
+    background-position: center;
+}
+.location-2{
+    display: flex;
+    align-items: flex-start;
+}
+.map{
+    display: flex;
+    margin-top: 140px;
+    align-items: center;
+    justify-content: center;
+}
+.map img{
+    max-width: 100%;
+    height: auto;
+}
+.map__text h2{
+    font-family: 'Space Mono';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 48px;
+max-width: 457px;
+margin: 0 auto;
+text-align: center;
+letter-spacing: -2.14286px;
+
+color: #495567;
+
+}
+.map__text{
+    margin-top: 64px;
+}
+.map__text p{
+    font-family: 'Lexend Deca';
+font-style: normal;
+font-weight: 400;
+padding: 40px 0px;
+font-size: 15px;
+line-height: 25px;
+margin:  0 auto;
+text-align: center;
+max-width: 573px;
+color: #939CAA;
+}
+.map__button{
+    margin: 0 auto;
+    display: block;
+    border: 1px solid transparent;
+    padding: 14px 40px;
+    transition: 0.6s;
+    color: white;
+    background-color: #FCB72B;
+}
+.map__text button:hover{
+    transition: 0.6s;
+    background-color: #FFFFFF;
+    color: #FCB72B;
+    border: 1px solid #FCB72B;
+}
+footer{
+    margin-top: 0;
+    margin: 0;
+    padding: 0;
+}
+.about h2{
+    font-family: 'Space Mono';
+font-style: normal;
+font-weight: 700;
+font-size: 56px;
+line-height: 56px;
+letter-spacing: -2.5px;
+color: #FFFFFF;
+}
+body ,html{
+    height: 0;
+}
+main{
+    min-height: 0%;
+    margin:0;
+}
+@media (max-width:600px){
+    .about h2{
+        font-size: 40px;
+    }
+    .map__text h2{
+        font-size: 32px;
+    }
+}

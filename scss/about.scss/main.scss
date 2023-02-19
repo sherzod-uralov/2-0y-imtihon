@@ -1,0 +1,11 @@
+.box{
+    background-image: url(../../about_images/Bitmap.png);
+    max-width: 100%;
+    background-repeat: no-repeat;
+    height: 200px;
+    margin-top: 90px;
+    background-position: center;
+}
+
+
+@import'./about-blocks/about-blocks';

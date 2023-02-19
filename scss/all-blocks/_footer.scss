@@ -1,0 +1,133 @@
+.footer{
+    background-color: #495567;
+    max-width: 100%;
+    margin-top: 100px;
+    padding: 102px 0px 0px 0px;
+}
+.loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    z-index: 100;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 10000s, visibility 2s;
+    background-color: rgb(255, 255, 255);
+}
+.loader-hidden{
+    visibility: hidden;
+    opacity: 0;
+}
+
+.loader::after{
+    content: '';
+    width: 50px;
+    animation: loading 1s  ease-in-out infinite;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px solid gray;
+    border-bottom-color: $main-clor;
+    border-top-color: $main-clor;
+}
+@keyframes loading {
+
+    from{
+        transform: rotate(0turn);
+    }
+    to{
+        transform: rotate(2turn);
+    }
+}
+.footer__top-tittle{
+    font-family: 'Space Mono';
+    font-style: normal;
+    max-width: 490px;
+    font-weight: 700;
+    font-size: 48px;
+    color: #FFFFFF;
+}
+.footer__top-android{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    padding: 0;
+    border-radius: 4px;
+    background-color: $light-greey;
+    span{
+        font-size: 10px;
+    }
+    h4{
+        font-size: 20px;
+    }
+    img{
+        padding-left: 16px;
+    }
+}
+.footer__top-android-ios{
+    display: flex;
+    align-items: center;
+    column-gap: 18px;
+}
+.footer__top-android-text{
+    padding: 5px 5px 5px 0px;
+    padding-right: 40px;
+}
+.footer__top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.footer__top-bg-image{
+    background-image: url(../../images/footer__bg.svg);
+    background-size: 1000px;
+    padding: 102px 0px;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    overflow: hidden;
+}.container-big-2{
+max-width: 1440px;
+margin:  0 auto;
+}
+.footer__menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+.footer__menu-bottom{
+    background-color: #333A44;
+    max-width: 100%;
+}
+.footer__menu{
+    ul{
+        display: flex;
+        column-gap: 32px;
+        padding-right: 10px;
+    }
+    a{
+        color: #939CAA;
+        transition: 0.6s;   
+    }
+}
+.footer__menu :nth-child(1){
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+}
+.footer__menu i{
+    color: $main-clor;
+    font-size: 30px;
+    transition: 0.7s;
+}
+.footer__logo{
+    display: flex;
+    column-gap: 24px;
+}
+footer a:hover{
+    color: $main-clor;
+    transition: 0.6s;
+}
